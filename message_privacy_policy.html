@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Privacy Policy — Messages</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111; line-height:1.6; margin:0; padding:24px; background:#ffffff; }
+        .container { max-width:900px; margin:0 auto; }
+        h1,h2,h3 { color:#0f2f66; }
+        a { color:#2F80ED; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .muted { color:#666; font-size:0.95rem; }
+        .section { margin-bottom:22px; }
+        pre { background:#f6f8fb; padding:12px; overflow:auto; border-radius:6px; }
+        ul { margin-left:1.2rem; }
+        table { border-collapse:collapse; width:100%; margin-top:8px; }
+        th,td { padding:10px; border:1px solid #eee; text-align:left; }
+        footer { margin-top:36px; font-size:0.9rem; color:#666; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Privacy Policy for <strong>Messages</strong></h1>
+    <p class="muted">Last updated: <strong>November 16, 2025</strong></p>
+
+    <div class="section">
+        <p>
+            Welcome — this Privacy Policy describes how <strong>Messages</strong> (the “App”) collects, uses, stores and discloses information when you use the App.
+            The App package name: <code>com.om.messages</code>.
+        </p>
+        <p>
+            Developer: <strong>Naimish Trivedi</strong><br/>
+            Contact: <a href="mailto:naimishtrivedi7@gmail.com">naimishtrivedi7@gmail.com</a><br/>
+            Country: India
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Summary (short)</h2>
+        <ul>
+            <li><strong>No ads</strong> — the App does not show advertisements.</li>
+            <li><strong>Offline-first</strong> — messages are processed and stored locally on your device; the App does not upload your SMS content to any server.</li>
+            <li><strong>Third-party services</strong> — the App uses Firebase Crashlytics, Firebase Analytics and Firebase Remote Config. These services collect crash and analytics data as described below.</li>
+            <li><strong>Permissions</strong> — the App requests SMS and contact permissions to function as an SMS manager (we explain each permission below).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>What data the App accesses and why</h2>
+        <p>The App only accesses the data required to provide its features. All SMS content and message management happens on-device unless you explicitly use the optional backup/restore file picker to export or import files.</p>
+
+        <h3>Device data & permissions</h3>
+        <table>
+            <thead><tr><th>Permission</th><th>Why it is needed</th></tr></thead>
+            <tbody>
+            <tr><td><code>READ_SMS</code>, <code>RECEIVE_SMS</code></td><td>To read and show SMS messages in the app, categorize messages (Personal, Transaction, OTPs, Offers, Group), and receive incoming messages.</td></tr>
+            <tr><td><code>SEND_SMS</code></td><td>To allow scheduled messages and sending SMS from within the app (user-initiated).</td></tr>
+            <tr><td><code>WRITE_SMS</code></td><td>To mark messages as read or to modify SMS if the app is set as the default SMS handler. This permission is only used when appropriate by Android rules.</td></tr>
+            <tr><td><code>READ_CONTACTS</code></td><td>To display contact names instead of raw phone numbers and provide better context in message threads.</td></tr>
+            <tr><td><code>READ_PHONE_STATE</code></td><td>Used for handling dual-SIM and phone state behavior where required by the platform (e.g., sending SMS selecting SIM).</td></tr>
+            <tr><td><code>POST_NOTIFICATIONS</code></td><td>To post notifications for incoming messages, scheduled messages, and restore/backup status (Android 13+).</td></tr>
+            <tr><td><code>SCHEDULE_EXACT_ALARM</code></td><td>To schedule timed messages with accurate delivery times.</td></tr>
+            <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Used only for contacting Firebase services (Crashlytics, Analytics, Remote Config). The App does not use these permissions to sync your messages or upload SMS content.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Is my SMS content uploaded to servers?</h2>
+        <p><strong>No.</strong> SMS messages remain on your device. The App does not upload or store your SMS content on any server. The only network activity is related to Firebase services listed below (crash reports, analytics, and remote config) and the optional user-initiated backup/restore flow which uses the Storage Access Framework (SAF) to read/write files selected by the user.</p>
+    </div>
+
+    <div class="section">
+        <h2>Third-party services we use</h2>
+        <p>The App uses the following third-party services that may collect limited diagnostic or analytics data. These services are used for improving stability, delivering remote configuration values, and understanding anonymous usage trends only.</p>
+
+        <ul>
+            <li>
+                <strong>Firebase Crashlytics</strong> — collects crash reports and stack traces to help the developer fix crashes. Crash reports may include device model, OS version, app version, and limited device identifiers. Crashlytics data is handled by Google. See Firebase Crashlytics privacy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.
+            </li>
+            <li>
+                <strong>Firebase Analytics (Google Analytics for Firebase)</strong> — collects anonymous usage statistics (events, device information, app version) to help improve the app. This does not include your SMS contents. See Google Analytics privacy information: <a href="https://support.google.com/analytics/answer/6004245">https://support.google.com/analytics/answer/6004245</a>.
+            </li>
+            <li>
+                <strong>Firebase Remote Config</strong> — used to fetch remote configuration values such as feature flags or optional lists displayed in the app. Remote Config may contact Firebase servers to fetch these values. See: <a href="https://firebase.google.com/docs/remote-config">https://firebase.google.com/docs/remote-config</a>.
+            </li>
+        </ul>
+
+        <p>These services are managed by Google. If you require more details about data handling by these services, please review the links above.</p>
+    </div>
+
+    <div class="section">
+        <h2>Backups and the Storage Access Framework (SAF)</h2>
+        <p>If you explicitly choose to backup or restore messages, the App will open a folder/file picker (SAF) and read/write files only inside the location you select. The App will never upload backups to a server automatically. The backup files are created and read only when you choose them. Make sure to store backup files securely.</p>
+    </div>
+
+    <div class="section">
+        <h2>Data retention & deletion</h2>
+        <p>The App keeps data only on your device. Crash and analytics reports sent to Firebase are retained according to Firebase's policies. For local data (messages stored on device), deletion is controlled by you (archive/delete/unread/star) and by the App's settings such as OTP auto-delete.</p>
+    </div>
+
+    <div class="section">
+        <h2>User choices & controls</h2>
+        <ul>
+            <li><strong>Manage backups:</strong> Backups are entirely under your control; you choose where to save and which files to restore.</li>
+            <li><strong>Permissions:</strong> You may revoke SMS/contact permissions in your device settings, however revoking these permissions will limit the App’s functionality (it may not display or send SMS).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Children and age restrictions</h2>
+        <p>This App is intended for users aged 18 and above. The App may display or process SMS messages that contain content unsuitable for children. If you are under 18, please do not use this App.</p>
+    </div>
+
+    <div class="section">
+        <h2>Security</h2>
+        <p>We take reasonable technical and organizational measures to protect data on your device and minimize unauthorized access. This includes following platform best practices and using secure libraries. However, no app or system is perfectly secure — please secure your device with a lock screen and backup files in secure locations.</p>
+    </div>
+
+    <div class="section">
+        <h2>Legal & compliance</h2>
+        <p>By using the App you agree to the terms described here. This Privacy Policy may be updated from time to time — the latest version will be shown on this page. If you have specific legal concerns, please contact the developer at <a href="mailto:naimishtrivedi7@gmail.com">naimishtrivedi7@gmail.com</a>.</p>
+    </div>
+
+    <div class="section">
+        <h2>Changes to this policy</h2>
+        <p>We may update this Privacy Policy occasionally. We will update the “Last updated” date at the top of this document. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>If you have questions or any privacy inquiries please contact:</p>
+        <p><strong>Naimish Trivedi</strong><br/>
+            Email: <a href="mailto:naimishtrivedi7@gmail.com">naimishtrivedi7@gmail.com</a></p>
+    </div>
+
+</div>
+</body>
+</html>
